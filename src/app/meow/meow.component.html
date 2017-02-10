@@ -5,3 +5,21 @@
     Cat Puns
   </h1>
 </div>
+
+<div>
+  <md-grid-list cols="2" rowHeight="400px">
+    <md-grid-tile *ngFor="let pun of meowData.catPuns">
+      <md-card class="card-height-width">
+        <img src="/assets/img/cat-emoji.jpg" alt="cat emoji">
+        <md-card-content>
+          <div>
+            {{pun.pun}}
+          </div>
+          <div>
+            {{pun.answer}}
+          </div>
+        </md-card-content>
+      </md-card>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
