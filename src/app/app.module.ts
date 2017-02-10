@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { routing } from './app.routing';
 
 import { MeowDataService } from './meow-data.service';
 import { MooDataService } from './moo-data.service';
@@ -15,6 +16,7 @@ import { BananaComponent } from './banana/banana.component';
 import { QuackComponent } from './quack/quack.component';
 import { MooComponent } from './moo/moo.component';
 import { MeowComponent } from './meow/meow.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { MeowComponent } from './meow/meow.component';
     BananaComponent,
     QuackComponent,
     MooComponent,
-    MeowComponent
+    MeowComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    routing,
     MaterialModule.forRoot()
   ],
   providers: [],
