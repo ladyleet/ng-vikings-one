@@ -1,3 +1,26 @@
 <h1 class="primary-color center-align">
   Welcome to Punny! 😂
 </h1>
+<div class="center-align">
+  <button md-raised-button color="primary" (click)="openDialog()">Instructions</button>
+</div>
+<div>
+  <md-grid-list cols="2" rowHeight="400px">
+    <md-grid-tile *ngFor="let pun of homeData.puns">
+      <div>
+        <img src="/assets/img/{{pun.image}}" alt="{{pun.altText}}" routerLink="{{pun.route}}" mdTooltip="{{pun.toolTip}}" mdTooltipPosition="above">
+        <md-chip-list>
+          <md-chip>
+            {{pun.chip1}}
+          </md-chip>
+          <md-chip>
+            {{pun.chip2}}
+          </md-chip>
+          <md-chip>
+            {{pun.chip3}}
+          </md-chip>
+        </md-chip-list>
+      </div>
+    </md-grid-tile>
+  </md-grid-list>
+</div>

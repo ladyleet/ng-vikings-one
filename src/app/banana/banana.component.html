@@ -5,3 +5,12 @@
     Banana Puns
   </h1>
 </div>
+
+<div>
+  <md-list>
+    <md-list-item *ngFor="let pun of bananaData.bananaPuns">
+      <span>{{pun.pun}}</span>
+      <span class="accent-color"> ...{{pun.answer}}</span>
+    </md-list-item>
+  </md-list>
+</div>
