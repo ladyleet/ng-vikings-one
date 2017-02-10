@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeDataService } from '../home-data.service';
+import { InstructionsDialogComponent } from '../instructions-dialog/instructions-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public homeData: HomeDataService) { }
 
   ngOnInit() {
   }

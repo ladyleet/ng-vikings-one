@@ -7,7 +7,7 @@ export class HomeDataService {
     type: "cat",
     image: "cat-emoji.jpg",
     altText: "cat emoji",
-    route: "meow",
+    route: "/meow",
     chip1: "cat",
     chip2: "meow",
     chip3: "kitty"  
@@ -16,7 +16,7 @@ export class HomeDataService {
     type: "banana",
     image: "banana-emoji.jpg",
     altText: "banana emoji",
-    route: "banana",
+    route: "/banana",
     chip1: "banana",
     chip2: "fruit",
     chip3: "yellow"  
@@ -25,7 +25,7 @@ export class HomeDataService {
     type: "cow",
     image: "cow-emoji.jpg",
     altText: "cow emoji",
-    route: "moo",
+    route: "/moo",
     chip1: "cow",
     chip2: "animal",
     chip3: "moo"  
