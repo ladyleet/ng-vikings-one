@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MooDataService } from '../moo-data.service';
 
 @Component({
   selector: 'app-moo',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MooComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mooData: MooDataService) { }
 
   ngOnInit() {
   }

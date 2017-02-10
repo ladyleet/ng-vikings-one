@@ -17,6 +17,7 @@ import { QuackComponent } from './quack/quack.component';
 import { MooComponent } from './moo/moo.component';
 import { MeowComponent } from './meow/meow.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { InstructionsDialogComponent } from './instructions-dialog/instructions-dialog.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     QuackComponent,
     MooComponent,
     MeowComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    InstructionsDialogComponent
   ],
   imports: [
     BrowserModule,
