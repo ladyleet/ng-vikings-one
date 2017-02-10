@@ -35,7 +35,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     routing,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [MeowDataService, MooDataService, BananaDataService, HomeDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
