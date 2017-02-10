@@ -16,22 +16,22 @@ export class MooDataService {
   {
     label: "Puns",
     pun: "What do cow detectives do?",
-    answer: "They go on steakouts"
+    answer: "They go on steakouts."
   },
   {
     label: "Are",
     pun: "Where do cows live in the US?",
-    answer: "Moo York"
+    answer: "Moo York."
   },
   {
     label: "So",
     pun: "Where did the bull lose all his money?",
-    answer: "The cowsino"
+    answer: "The cowsino."
   },
   {
     label: "Hilarious!",
     pun: "What do you call a cow with a twitch?",
-    answer: "Beef jerky"
+    answer: "Beef jerky."
   }];
 
   constructor() { }
