@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BananaDataService } from '../banana-data.service';
 
 @Component({
   selector: 'app-banana',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BananaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bananaData: BananaDataService) { }
 
   ngOnInit() {
   }
