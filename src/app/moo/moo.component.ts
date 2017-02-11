@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MdSnackBar } from '@angular/material';
 import { MooDataService } from '../moo-data.service';
 
 @Component({
@@ -7,8 +8,10 @@ import { MooDataService } from '../moo-data.service';
   styleUrls: ['./moo.component.css']
 })
 export class MooComponent implements OnInit {
-
-  constructor(public mooData: MooDataService) { }
+  openSnackbar() {
+    this.snackbar.open("Haha we thought it was funny too!", "Go to the next", {duration: 2000, })
+  }
+  constructor(public mooData: MooDataService, public snackbar: MdSnackBar) { }
 
   ngOnInit() {
   }

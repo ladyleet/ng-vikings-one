@@ -30,6 +30,9 @@ import { InstructionsDialogComponent } from './instructions-dialog/instructions-
     BreadcrumbComponent,
     InstructionsDialogComponent
   ],
+  entryComponents: [
+    InstructionsDialogComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
