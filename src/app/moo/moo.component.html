@@ -9,10 +9,16 @@
 <div>
   <md-tab-group>
     <md-tab *ngFor="let pun of mooData.cowPuns" label="{{pun.label}}">
-      {{pun.pun}}
-      {{pun.answer}}
-      <div>
-        <button md-raised-button color="accent" (click)="openSnackbar()">Click this if you thought it was funny!</button>
+      <div class="center-align">
+        <div class="margin-top-100">
+          {{pun.pun}}
+        </div>
+        <div class="margin-top-10">
+          {{pun.answer}}
+        </div>
+        <div class="margin-top-10">
+          <button md-raised-button color="accent" (click)="openSnackbar()">Click this if you thought it was funny!</button>
+        </div>
       </div>
     </md-tab>
   </md-tab-group>
