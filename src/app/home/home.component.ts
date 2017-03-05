@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MdDialog } from '@angular/material';
 import { HomeDataService } from '../home-data.service';
 import { InstructionsDialogComponent } from '../instructions-dialog/instructions-dialog.component';
 
@@ -9,8 +10,12 @@ import { InstructionsDialogComponent } from '../instructions-dialog/instructions
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public homeData: HomeDataService) { }
+  constructor(public homeData: HomeDataService, public dialog: MdDialog) { }
 
+  openDialog() {
+    this.dialog.open(InstructionsDialogComponent);
+  }
+  
   ngOnInit() {
   }
 
