@@ -18,6 +18,7 @@ import { MooComponent } from './moo/moo.component';
 import { MeowComponent } from './meow/meow.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { InstructionsDialogComponent } from './instructions-dialog/instructions-dialog.component';
+import { ExampleComponentComponent } from './example-component/example-component.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { InstructionsDialogComponent } from './instructions-dialog/instructions-
     MooComponent,
     MeowComponent,
     BreadcrumbComponent,
-    InstructionsDialogComponent
+    InstructionsDialogComponent,
+    ExampleComponentComponent
   ],
   imports: [
     BrowserModule,
