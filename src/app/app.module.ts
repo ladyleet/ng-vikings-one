@@ -37,6 +37,9 @@ import { InstructionsDialogComponent } from './instructions-dialog/instructions-
     routing,
     MaterialModule.forRoot()
   ],
+  entryComponents: [
+    InstructionsDialogComponent
+  ],
   providers: [MeowDataService, MooDataService, BananaDataService, HomeDataService],
   bootstrap: [AppComponent]
 })
