@@ -5,3 +5,19 @@
     Cow Puns
   </h1>
 </div>
+
+<div>
+  <md-tab-group>
+    <md-tab *ngFor="let pun of mooData.cowPuns" label="{{pun.label}}">
+      <div class="margin-top-10 center-align">
+        {{pun.pun}}
+      </div>
+      <div class="margin-top-10 center-align">
+        {{pun.answer}}
+      </div>
+      <div class="margin-top-10 center-align">
+        <button md-raised-button color="accent" (click)="openSnackbar()">Click here if you thought that was funny!</button>
+      </div>
+    </md-tab>
+  </md-tab-group>
+</div>
